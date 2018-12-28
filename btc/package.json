@@ -1,0 +1,31 @@
+{
+  "name": "MoneyPot",
+  "version": "0.0.1",
+  "engines": {
+    "node": "~0.10.32"
+  },
+  "dependencies": {
+    "CBuffer": "~0.1.4",
+    "async": "~0.8.0",
+    "better-assert": "~1.0.0",
+    "big-integer": "~1.6.32",
+    "binary-search": "^1.2.0",
+    "current-week-number": "^1.0.7",
+    "debug": "^2.2.0",
+    "decimal.js": "~10.0.1",
+    "lodash": "^4.17.11",
+    "pg": "^7.6.0",
+    "redis": "^2.8.0",
+    "rolling-rate-limiter": "^0.1.11",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "uuid": "^2.0.1",
+    "wallet-address-validator": "^0.2.1",
+    "winston": "~2.2.0"
+  },
+  "scripts": {
+    "start-dev": "env $(cat .env | xargs) nodemon server.js --use_strict",
+    "start": "node server.js --use_strict"
+  },
+  "devDependencies": {}
+}

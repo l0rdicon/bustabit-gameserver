@@ -1,0 +1,20 @@
+{
+  "name": "stake-server",
+  "version": "0.0.1",
+  "engines": {
+    "node": "~0.10.32"
+  },
+  "dependencies": {
+    "debug": "^2.2.0",
+    "lodash": "~2.4.1",
+    "pg": "~3.3.0",
+    "winston": "~2.2.0",
+    "simple-crypto-js": "~2.0.2",
+    "jayson": "~2.1.0"
+  },
+  "scripts": {
+    "start-dev": "env $(cat .env | xargs) nodemon stakeServer.js --use_strict",
+    "start": "node stakeServer.js --use_strict"
+  },
+  "devDependencies": {}
+}
